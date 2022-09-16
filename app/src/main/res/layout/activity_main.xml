@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editUserInput"
+        android:layout_width="321dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="Type a 4-letter word here"
+        android:inputType="text"
+        android:lines="1"
+        android:maxLength="4"
+        android:maxLines="1"
+        android:text=""
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.834" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="145dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="Submit"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/editUserInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Answer"
+        android:layout_width="165dp"
+        android:layout_height="42dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.93" />
+
+    <LinearLayout
+        android:layout_width="206dp"
+        android:layout_height="358dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/Guess1"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:textSize="25dp"
+            android:visibility="invisible"
+            android:text="Guess #1" />
+
+        <TextView
+            android:id="@+id/GuessCheck1"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:textSize="25dp"
+            android:visibility="invisible"
+            android:text="Guess #1 Check" />
+
+        <TextView
+            android:id="@+id/Guess2"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:textSize="25dp"
+            android:visibility="invisible"
+            android:text="Guess #2" />
+
+        <TextView
+            android:id="@+id/GuessCheck2"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:textSize="25dp"
+            android:visibility="invisible"
+            android:text="Guess #2 Check" />
+
+        <TextView
+            android:id="@+id/Guess3"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:textSize="25dp"
+            android:visibility="invisible"
+            android:text="Guess #3" />
+
+        <TextView
+            android:id="@+id/GuessCheck3"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:textSize="25dp"
+            android:visibility="invisible"
+            android:text="Guess #3 Check" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="204dp"
+        android:layout_height="360dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.99"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/userInput1"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:textAlignment="viewEnd"
+            android:textSize="25dp"
+            android:visibility="invisible"
+            android:text="blank" />
+
+        <TextView
+            android:id="@+id/GuessCheckResult1"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:textAlignment="viewEnd"
+            android:textSize="25dp"
+            android:visibility="invisible"
+            android:text="blank" />
+
+        <TextView
+            android:id="@+id/userInput2"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:textAlignment="viewEnd"
+            android:textSize="25dp"
+            android:visibility="invisible"
+            android:text="blank" />
+
+        <TextView
+            android:id="@+id/GuessCheckResult2"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:textAlignment="viewEnd"
+            android:textSize="25dp"
+            android:visibility="invisible"
+            android:text="blank" />
+
+        <TextView
+            android:id="@+id/userInput3"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:textAlignment="viewEnd"
+            android:textSize="25dp"
+            android:visibility="invisible"
+            android:text="blank" />
+
+        <TextView
+            android:id="@+id/GuessCheckResult3"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:textAlignment="viewEnd"
+            android:textSize="25dp"
+            android:visibility="invisible"
+            android:text="blank" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
